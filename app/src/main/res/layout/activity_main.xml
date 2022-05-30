@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/interest1"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+      android:background="@drawable/gradient"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            android:text="Interest 1" />
+        <TextView
+            android:id="@+id/interest2"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/gradient"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            android:text="Interest 2" />
+        <TextView
+            android:id="@+id/interest3"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/gradient"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            android:text="Interest 3" />
+        <TextView
+            android:id="@+id/interest4"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/gradient"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            android:text="Interest 4" />
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/i1"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hr"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="5dp"
+        android:text="Interest 1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/r2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i1"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/interest" />
+
+    <TextView
+        android:id="@+id/i2"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Interest 2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/r3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/interest" />
+
+    <TextView
+        android:id="@+id/i3"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r3"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Interest 3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/r4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i3"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/interest" />
+    <TextView
+        android:id="@+id/i4"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r4"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Interest 4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/r5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i4"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        tools:listitem="@layout/interest"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+</RelativeLayout>
